@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.homepage-background{
+  text-align: center;
+}
+.header{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -5px;
+}
+
+.logo-top{
+  margin-top:20px;
+  margin-bottom:50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  /* font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  width: 250px; */
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.timer span {
+  display: block;
+}
+
+.timer .days,
+.timer .hours,
+.timer .minutes,
+.timer .seconds
+ {
+  font-size: 1.5rem;
+}
+
+.timer .separator {
+  margin: 0 0.5rem;
+}
