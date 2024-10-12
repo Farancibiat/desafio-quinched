@@ -126,7 +126,7 @@ const Home = () => {
 
             </div>
             <Button className="inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-center text-white rounded-lg bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900" variant="contained" color="success">
-              <form action="https://forms.gle/8dc88mRCDcd1VafQ7" target="_blank" rel="noopener noreferrer">
+              <form action="https://forms.gle/NR5wCEFRCDcnMTu27" target="_blank" rel="noopener noreferrer">
                 <input type="submit" value='¡ Inscribete !' />
 
               </form></Button>
