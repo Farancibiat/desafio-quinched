@@ -52,79 +52,94 @@ const Home = () => {
         <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 mb-8">
           <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12 mb-8 p-0" >
 
+
             <h1 className="text-gray-900 dark:text-white text-2xl md:text-4xl font-bold mb-2">Tiempo faltante para la largada:</h1>
-            <div className="timer">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 100 100"
-                width="100"
-                height="100">
-                {/* <!-- Reloj circular --> */}
-                <circle
-                  cx="50"
-                  cy="50"
-                  r="45"
-                  stroke="black"
-                  stroke-width="5"
-                  fill="none" />
 
-                {/* <!-- Aguja de la hora --> */}
-                <line
-                  x1="50"
-                  y1="50"
-                  x2="50"
-                  y2="30"
-                  stroke="black"
-                  stroke-width="3"
-                  stroke-linecap="round" />
+            <div className="flex justify-center gap-4 mb-8">
+            <div className='flex items-center'>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 100 100"
+                  width="100"
+                  height="100">
+                  {/* <!-- Reloj circular --> */}
+                  <circle
+                    cx="50"
+                    cy="50"
+                    r="45"
+                    stroke="black"
+                    stroke-width="5"
+                    fill="none" />
 
-                {/* <!-- Aguja del minuto --> */}
-                <line
-                  x1="50"
-                  y1="50"
-                  x2="70"
-                  y2="50"
-                  stroke="black"
-                  stroke-width="2"
-                  stroke-linecap="round" />
+                  {/* <!-- Aguja de la hora --> */}
+                  <line
+                    x1="50"
+                    y1="50"
+                    x2="50"
+                    y2="30"
+                    stroke="black"
+                    stroke-width="3"
+                    stroke-linecap="round" />
 
-                {/* <!-- Centro del reloj --> */}
-                <circle
-                  cx="50"
-                  cy="50"
-                  r="2"
-                  fill="black" />
-              </svg>
-              <Box
-                className='mt-2'
-                display="flex"
-                justifyContent="center"
-                alignItems="center"
-                gap={2}
-                bgcolor="rgb(86,165,170)" // Azul oscuro de fondo
-                color="rgb(255,253,22)" // Amarillo fosforescente
-                p={3}
-                borderRadius="12px"
-              >
-                <Box textAlign="center">
-                  <Typography variant="h4" className='text-3xl md:text-5xl' sx={{ color: 'rgb(255,253,22)' }}>{timeLeft ? timeLeft.days : 0}</Typography>
-                  <Typography variant="subtitle1">Días</Typography>
-                </Box>
-                <Box textAlign="center">
-                  <Typography variant="h4" className='text-3xl md:text-5xl' sx={{ color: 'rgb(255,253,22)' }}>{timeLeft ? timeLeft.hours : 0}</Typography>
-                  <Typography variant="subtitle1">Horas</Typography>
-                </Box>
-                <Box textAlign="center">
-                  <Typography variant="h4" className='text-3xl md:text-5xl' sx={{ color: 'rgb(255,253,22)' }}>{timeLeft ? timeLeft.minutes : 0}</Typography>
-                  <Typography variant="subtitle1">Minutos</Typography>
-                </Box>
-                <Box textAlign="center">
-                  <Typography variant="h4" className='text-3xl md:text-5xl' sx={{ color: 'rgb(255,253,22)' }}>{timeLeft ? timeLeft.seconds : 0}</Typography>
-                  <Typography variant="subtitle1">Segundos</Typography>
-                </Box>
-              </Box>
+                  {/* <!-- Aguja del minuto --> */}
+                  <line
+                    x1="50"
+                    y1="50"
+                    x2="70"
+                    y2="50"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round" />
+
+                  {/* <!-- Centro del reloj --> */}
+                  <circle
+                    cx="50"
+                    cy="50"
+                    r="2"
+                    fill="black" />
+                </svg>
+              </div>
+              <div >
+                <div className="timer">
+
+                  <Box
+                    className='mt-2'
+                    display="flex"
+                    justifyContent="center"
+                    alignItems="center"
+                    gap={2}
+                    bgcolor="rgb(86,165,170)" // Azul oscuro de fondo
+                    color="rgb(255,253,22)" // Amarillo fosforescente
+                    p={3}
+                    borderRadius="12px"
+                  >
+                    <Box textAlign="center">
+                      <Typography variant="h4" className='text-3xl md:text-5xl' sx={{ color: 'rgb(255,253,22)' }}>{timeLeft ? timeLeft.days : 0}</Typography>
+                      <Typography variant="subtitle1">Días</Typography>
+                    </Box>
+                    <Box textAlign="center">
+                      <Typography variant="h4" className='text-3xl md:text-5xl' sx={{ color: 'rgb(255,253,22)' }}>{timeLeft ? timeLeft.hours : 0}</Typography>
+                      <Typography variant="subtitle1">Horas</Typography>
+                    </Box>
+                    <Box textAlign="center">
+                      <Typography variant="h4" className='text-3xl md:text-5xl' sx={{ color: 'rgb(255,253,22)' }}>{timeLeft ? timeLeft.minutes : 0}</Typography>
+                      <Typography variant="subtitle1">Minutos</Typography>
+                    </Box>
+                    <Box textAlign="center">
+                      <Typography variant="h4" className='text-3xl md:text-5xl' sx={{ color: 'rgb(255,253,22)' }}>{timeLeft ? timeLeft.seconds : 0}</Typography>
+                      <Typography variant="subtitle1">Segundos</Typography>
+                    </Box>
+                  </Box>
+
+                </div>
+              </div>
+
+
+
 
             </div>
+
+
             <Button className="inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-center text-white rounded-lg bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900" variant="contained" color="success">
               <form action="https://forms.gle/NR5wCEFRCDcnMTu27" target="_blank" rel="noopener noreferrer">
                 <input type="submit" value='¡ Inscribete !' />
@@ -148,7 +163,7 @@ const Home = () => {
                     stroke="currentColor"
                   />
 
-        
+
                   <line
 
                     x1="50"
@@ -189,29 +204,15 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className=" p-2 bg-teal-600 border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">asdasd</section>
+      <section className=" p-2 bg-teal-600 border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600"></section>
 
       <footer className="fixed bottom-0 left-0 z-20 w-full p-2 bg-teal-600 border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600 ">
         <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-          <span className="text-sm  sm:text-center dark:text-gray-400">© 2024 <a href="https://www.aguasabiertaschiloe.com/" className="hover:underline">Club Deportivo Social y Cultural Aguas Abiertas Chiloé</a>.
-          </span>
-           <span>
-           <a href="https://www.farancibiat.cl/" className="hover:underline text-xs">Sitio desarrollado por Farancibiat</a>
-           </span>
-          {/* <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
-        <li>
-            <a href="#" className="hover:underline me-4 md:me-6">About</a>
-        </li>
-        <li>
-            <a href="#" className="hover:underline me-4 md:me-6">Privacy Policy</a>
-        </li>
-        <li>
-            <a href="#" className="hover:underline me-4 md:me-6">Licensing</a>
-        </li>
-        <li>
-            <a href="#" className="hover:underline">Contact</a>
-        </li>
-    </ul> */}
+          <p className="text-sm  sm:text-center dark:text-gray-400">© 2024 <a href="https://www.aguasabiertaschiloe.com/" className="hover:underline">Club Deportivo Social y Cultural Aguas Abiertas Chiloé</a>.
+          </p>
+          <p>
+            <a href="https://www.farancibiat.cl/" className="hover:underline text-xs">Sitio desarrollado por Farancibiat</a>
+          </p>
         </div>
       </footer>
     </div>

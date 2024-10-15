@@ -6,7 +6,7 @@ const nextConfig = {
       // Basic redirect
       {
         source: '/desafio/inscripcion',
-        destination: 'https://forms.gle/8dc88mRCDcd1VafQ7',
+        destination: 'https://forms.gle/NR5wCEFRCDcnMTu27',
         permanent: true,
       },
       {
@@ -15,8 +15,13 @@ const nextConfig = {
         permanent: true,
       }, 
       {
-        source: '/desafio/afichecuadrado',
-        destination: 'https://storage.googleapis.com/feriaaac/publicos/Afiche%20cuadrado.png',
+        source: '/desafio/afichevalores',
+        destination: 'https://storage.googleapis.com/feriaaac/publicos/AFICHE%20VALORES%20DESAFIO%20UNI%C3%93N%20DE%20LAS%20ISLAS.jpg',
+        permanent: true,
+      },
+      {
+        source: '/desafio/afichegral',
+        destination: 'https://storage.googleapis.com/feriaaac/publicos/AFICHE%20DESAFIO%20UNI%C3%93N%20DE%20LAS%20ISLAS.jpg',
         permanent: true,
       },
       {
