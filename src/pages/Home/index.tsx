@@ -10,6 +10,7 @@ interface iDias {
   minutes: number;
   seconds: number;
 }
+
 const Home = () => {
   const [timeLeft, setTimeLeft] = useState<iDias | null>(null);
 
