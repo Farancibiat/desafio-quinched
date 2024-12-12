@@ -41,7 +41,9 @@ const Home = () => {
         </Box>
 
       </section>
-      <section className=" p-2 bg-teal-600 border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600"></section>
+      <section className="bg-teal-400">
+        <div className='tope'></div>
+      </section>
 
       <footer className="fixed bottom-0 left-0 z-20 w-full p-2 bg-teal-600 border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600 ">
         <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
